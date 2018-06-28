@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestTg extends BaseTest {
-    @Test
+    @Test (groups = "trigonometric")
     public void testTg() {
         double a = 30;
         a = Math.toDegrees(a);

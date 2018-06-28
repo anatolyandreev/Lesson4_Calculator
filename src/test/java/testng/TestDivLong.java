@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestDivLong extends BaseTest {
-    @Test
+    @Test (groups = "arithmetic")
     public void testDivLong() {
         long a = 20;
         long b = 2;

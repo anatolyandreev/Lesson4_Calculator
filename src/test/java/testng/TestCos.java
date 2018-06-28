@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestCos extends BaseTest {
-    @Test
+    @Test (groups = "trigonometric")
     public void testCos() {
         double a = 30;
         double actual = calculator.cos(a);

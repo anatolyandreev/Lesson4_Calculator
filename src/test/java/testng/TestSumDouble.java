@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestSumDouble extends BaseTest {
-    @Test
+    @Test (groups = "arithmetic")
     public void testSumDouble() {
         double a = 3.575;
         double b = 0;

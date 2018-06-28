@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestMultLong extends BaseTest{
-    @Test
+    @Test (groups = "arithmetic")
     public void testMultLong() {
         long a = 3;
         long b = 5;

@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestCtg extends BaseTest {
-    @Test
+    @Test (groups = "trigonometric")
     public void testCtg() {
         double a = 3;
         double actual = calculator.ctg(a);

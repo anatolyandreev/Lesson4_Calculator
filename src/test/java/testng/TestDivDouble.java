@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestDivDouble extends BaseTest {
-    @Test
+    @Test (groups = "arithmetic")
     public void testMultDouble() {
         double a = -3.8;
         double b = 3;
