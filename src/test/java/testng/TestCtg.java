@@ -4,11 +4,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestCtg extends BaseTest {
-    @Test (groups = "trigonometric")
+    @Test (groups = "trigonometric", dependsOnGroups = "logic")
     public void testCtg() {
         double a = 3;
         double actual = calculator.ctg(a);
-        double expected = (Math.pow(2.718281828, a) - Math.pow(2.718281828, a)) / (Math.pow(2.718281828, a) + Math.pow(2.718281828, a));
-        Assert.assertEquals(actual, expected, "Fail");
+        System.out.println(Math.tanh(a));
+        Assert.assertEquals(actual, 0.9950547536867305, "Fail");
     }
 }

@@ -1,5 +1,36 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-  
-<suite name="Suite1" verbose="1" >
-<
+
+<suite name="Suite1" verbose="1">
+    <test name="Test-Groups">
+        <groups>
+            <run>
+                <include name="logic"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="testng"/>
+        </packages>
+    </test>
+    <test name="Test-Dependencies">
+        <parameter name="number" value="2"/>
+        <groups>
+            <run>
+                <include name="trigonometric"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="testng"/>
+        </packages>
+    </test>
+    <test name="Test-Parameters">
+        <parameter name="number" value="2"/>
+        <groups>
+            <run>
+                <include name="logic"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="testng"/>
+        </packages>
+    </test>
 </suite>
