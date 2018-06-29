@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class TestIsPositive extends BaseTest {
     @Parameters ({"number"})
     @Test (groups = "logic")
-    public void testIsPositive(long a) {
+    public void testIsPositive(@Optional(1) long a) {
         boolean actual = calculator.isPositive(a);
         Assert.assertTrue(actual, "Fail");
     }
